@@ -2,7 +2,7 @@ console.log('Client side javascript file is loaded')
 
 const options = {method:'GET', headers:{'Content-type':'json/application'}}
 const getWeather = async (address) => {
-    const url = 'http://localhost:3000/weather'
+    const url = '/weather'
     const response = await fetch(`${url}?address=${address}`, options)
     return await response.json()
 }
